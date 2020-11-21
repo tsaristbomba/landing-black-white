@@ -49,6 +49,10 @@ export const Info3P = styled.p`
   font-size: 16px;
   line-height: 24px;
   width: 50%;
+
+  @media screen and (max-width: 480px) {
+    width: 60%;
+  }
 `;
 export const Info3H1 = styled.h1`
   color: #fff;
@@ -63,8 +67,8 @@ export const Info3H1 = styled.h1`
   justify-content: flex-end;
 
   @media screen and (max-width: 480px) {
-    font-size: 25px;
     margin-left: 24px;
+    width: 40%;
   }
 `;
 export const PicWrapper = styled.div`

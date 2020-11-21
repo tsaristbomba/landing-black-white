@@ -3,45 +3,24 @@ import { Link } from "react-router-dom";
 import { primary, secondary, tertiary, light } from "../../data";
 
 export const HeroContainer = styled.div`
-  /* background: ${primary}; */
-  /* display: flex; */
-  /* justify-content: center; */
-  align-items: flex-start;
-  padding: 0 30px;
-  position: relative;
-  /* flex-direction: column; */
-  /* z-index: 1; */
-
-  :before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: linear-gradient(120deg, ${secondary} 0%, ${primary} 20%);
-    z-index: 2;
-    height: 100%;
-  }
+  padding: 0 24px;
+  background: linear-gradient(120deg, ${secondary} 0%, ${primary} 20%);
 
   @media screen and (max-width: 480px) {
     padding-top: 24px;
-    position: relative;
   }
 `;
 
 export const HeroWrapper = styled.div`
-  display: grid;
-  z-index: 3;
+  display: flex;
+  align-items: center;
   height: 660px;
   width: 100%;
-  max-width: 1100px;
   padding: 0 24px;
-  justify-content: start;
-  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
 
   @media screen and (max-width: 768px) {
-    /* height: 550px; */
     height: 1000px;
     top: 80px;
     padding: 0;
@@ -51,12 +30,10 @@ export const HeroWrapper = styled.div`
 export const HeroContent = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr) minmax(auto, 0.6fr);
-  align-items: center;
   grid-template-areas: "col1 col2";
 
   @media screen and (max-width: 768px) {
-    /* grid-template-areas: "col1 col1" "col2 col2"; */
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -67,6 +44,10 @@ export const HeroRow1 = styled.div`
   grid-area: col1;
   padding: 0 15px;
   max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: 480px) {
     margin: 0 auto 24px auto;
@@ -188,6 +169,7 @@ export const HeroImg = styled.img`
   max-height: 300px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 4px;
 
   @media screen and (max-width: 768px) {
     margin: 0 auto 24px auto;
