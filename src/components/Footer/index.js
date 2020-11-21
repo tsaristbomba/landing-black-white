@@ -12,7 +12,9 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <FooterLogo>Growee.io</FooterLogo>
+        <FooterLogo>
+          Growee.io ⓒ {new Date().getFullYear()} all rights reserved.
+        </FooterLogo>
         <SocialsWrapper>
           <SocialLink href="/" target="_blank" aria-label="Facebook">
             <FaFacebook />
