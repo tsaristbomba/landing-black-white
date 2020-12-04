@@ -23,9 +23,12 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
   max-width: 1100px;
+  padding: 0 24px;
 
+  @media screen and (max-width: 768px) {
+    padding: 0 134px;
+  }
   @media screen and (max-width: 480px) {
     padding: 0;
   }
@@ -54,10 +57,15 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    transform: translate(-100%, 70%);
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
+    padding-right: 54px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-right: 0;
   }
 `;
 
@@ -66,6 +74,8 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+  justify-content: space-between;
+  width: 300px;
   /* margin-right: -22px; */
 
   @media screen and (max-width: 768px) {
@@ -82,7 +92,7 @@ export const NavLink = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   height: 100%;
   cursor: pointer;
   border-bottom: 3px solid transparent;

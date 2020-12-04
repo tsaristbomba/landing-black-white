@@ -75,7 +75,7 @@ export const info3Obj = {
 
 //Info4 data object
 export const info4Obj = {
-  title: "Ready to join us",
+  title: "Ready to join us?",
   sub1:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum ante nec ex consectetur, nec luctus metus rutrum.",
   sub2:

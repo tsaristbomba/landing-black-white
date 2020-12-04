@@ -6,21 +6,23 @@ export const FooterContainer = styled.div`
   height: 80px;
   display: flex;
   align-items: center;
-  padding: 0 24px;
+  justify-content: center;
 `;
 export const FooterWrapper = styled.div`
-  padding: 0 120px;
+  /* padding: 0 120px; */
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 1100px;
+  padding: 0 24px;
 
   @media screen and (max-width: 768px) {
-    padding: 0 48px;
+    padding: 0 134px;
   }
 
   @media screen and (max-width: 480px) {
-    padding: 0;
+    /* padding: 0 24px; */
   }
 `;
 export const FooterLogo = styled.p`

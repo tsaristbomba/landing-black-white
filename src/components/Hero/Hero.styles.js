@@ -14,16 +14,22 @@ export const HeroContainer = styled.div`
 export const HeroWrapper = styled.div`
   display: flex;
   align-items: center;
-  height: 660px;
+  justify-content: center;
+  height: 85vh;
+  min-height: 700px;
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
   margin: 0 auto;
 
   @media screen and (max-width: 768px) {
-    height: 1000px;
-    top: 80px;
-    padding: 0;
+    height: 100%;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  @media screen and (max-width: 480px) {
+    padding-top: 1rem;
+    padding-bottom: 0;
   }
 `;
 
@@ -31,6 +37,7 @@ export const HeroContent = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr) minmax(auto, 0.6fr);
   grid-template-areas: "col1 col2";
+  grid-gap: 2rem;
 
   @media screen and (max-width: 768px) {
     align-items: center;
@@ -38,11 +45,16 @@ export const HeroContent = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+  @media screen and (max-width: 480px) {
+    padding: 48px 0 48px 0;
+    grid-gap: 1rem;
+  }
 `;
 
 export const HeroRow1 = styled.div`
   grid-area: col1;
-  padding: 0 15px;
+  /* padding: 0 15px; */
   max-width: 500px;
   display: flex;
   flex-direction: column;
@@ -57,8 +69,12 @@ export const HeroRow1 = styled.div`
 
 export const HeroRow2 = styled.div`
   grid-area: col2;
-  padding: 0 15px;
+  /* padding: 0 15px; */
   /* max-width: 500px; */
+
+  @media screen and (max-width: 768px) {
+    max-width: 500px;
+  }
 
   @media screen and (max-width: 480px) {
     margin: 24px auto 24px auto;
@@ -74,8 +90,13 @@ export const HeroH1 = styled.h1`
   text-transform: uppercase;
   font-weight: bolder;
 
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
   @media screen and (max-width: 480px) {
     font-size: 25px;
+    max-width: 250px;
   }
 `;
 
@@ -84,6 +105,10 @@ export const HeroP = styled.p`
   margin-bottom: 35px;
   font-size: 16px;
   line-height: 24px;
+
+  @media screen and (max-width: 768px) {
+    /* text-align: justify; */
+  }
 `;
 
 export const HeroBoxes = styled.div`
@@ -97,7 +122,7 @@ export const HeroBoxes = styled.div`
 export const HeroBox1 = styled.div`
   background: ${tertiary};
   grid-area: col1;
-  margin: 0 10px;
+  margin-right: 10px;
   padding: 25px;
   border-radius: 4px;
   cursor: pointer;
@@ -109,7 +134,7 @@ export const HeroBox1 = styled.div`
 
   @media screen and (max-width: 480px) {
     padding: 15px;
-    margin: 0 5px;
+    margin-right: 0 5px;
     /* width: 100%; */
   }
 `;
@@ -117,7 +142,7 @@ export const HeroBox1 = styled.div`
 export const HeroBox2 = styled.div`
   background: ${tertiary};
   grid-area: col2;
-  margin: 0 10px;
+  margin-right: 10px;
   padding: 25px;
   border-radius: 4px;
   cursor: pointer;
@@ -129,7 +154,7 @@ export const HeroBox2 = styled.div`
 
   @media screen and (max-width: 480px) {
     padding: 15px;
-    margin: 0 5px;
+    margin-right: 0 5px;
     /* width: 100%; */
   }
 `;
@@ -137,7 +162,7 @@ export const HeroBox2 = styled.div`
 export const HeroBox3 = styled.div`
   background: ${tertiary};
   grid-area: col3;
-  margin: 0 10px;
+  margin-right: 10px;
   padding: 25px;
   border-radius: 4px;
   cursor: pointer;
@@ -149,7 +174,7 @@ export const HeroBox3 = styled.div`
 
   @media screen and (max-width: 480px) {
     padding: 15px;
-    margin: 0 5px;
+    margin-right: 0 5px;
     /* width: 100%; */
   }
 `;
@@ -172,10 +197,9 @@ export const HeroImg = styled.img`
   border-radius: 4px;
 
   @media screen and (max-width: 768px) {
-    margin: 0 auto 24px auto;
-    max-width: 400px;
-    display: flex;
-    justify-content: center;
+    /* margin: 0 auto 24px auto; */
+    /* max-width: 400px; */
+    max-height: auto;
   }
 `;
 

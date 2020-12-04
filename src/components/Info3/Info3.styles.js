@@ -3,7 +3,7 @@ import { primary, light } from "../../data";
 
 export const Info3Container = styled.div`
   background: ${primary};
-  height: 100vh;
+  /* height: 100vh; */
 
   @media screen and (max-width: 850px) {
     height: 100%;
@@ -17,9 +17,10 @@ export const Info3Wrapper = styled.div`
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 24px;
+  padding-bottom: 96px;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 
   @media screen and (max-width: 480px) {
     padding: 0;
@@ -33,8 +34,8 @@ export const Info3Row = styled.div`
   flex-wrap: wrap;
   padding: 24px;
 
-  @media screen and (max-width: 480px) {
-    padding: 0;
+  @media screen and (max-width: 768px) {
+    max-width: 500px;
   }
 `;
 export const TextWrapper = styled.div`
@@ -42,7 +43,11 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 24px;
+  /* padding: 24px; */
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 `;
 export const Info3P = styled.p`
   color: ${light};
@@ -50,8 +55,8 @@ export const Info3P = styled.p`
   line-height: 24px;
   width: 50%;
 
-  @media screen and (max-width: 480px) {
-    width: 60%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
   }
 `;
 export const Info3H1 = styled.h1`
@@ -66,9 +71,11 @@ export const Info3H1 = styled.h1`
   display: flex;
   justify-content: flex-end;
 
-  @media screen and (max-width: 480px) {
-    margin-left: 24px;
-    width: 40%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1rem;
   }
 `;
 export const PicWrapper = styled.div`
@@ -79,6 +86,12 @@ export const PicWrapper = styled.div`
   flex-direction: column;
   text-align: center;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 1rem;
+  }
 `;
 export const Info3Img = styled.img`
   max-width: 200px;
@@ -87,6 +100,12 @@ export const Info3Img = styled.img`
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   border-radius: 4px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    max-width: 500px;
+    max-height: 100%;
+  }
 `;
 export const Info3H3 = styled.h3`
   text-transform: uppercase;

@@ -4,10 +4,11 @@ import { primary, light } from "../../data";
 
 export const Info1Container = styled.div`
   background: ${primary};
-  height: 100vh;
+  height: 600px;
 
   @media screen and (max-width: 768px) {
     height: 100%;
+    padding: 48px 0 48px 0;
   }
 `;
 export const Info1Wrapper = styled.div`
@@ -26,6 +27,7 @@ export const Info1Row = styled.div`
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: "col1 col2";
+  grid-gap: 2rem;
 
   @media screen and (max-width: 768px) {
     grid-template-areas: "col1 col1" "col2 col2";
@@ -35,7 +37,7 @@ export const Info1Row = styled.div`
 `;
 export const Column1 = styled.div`
   grid-area: col1;
-  padding: 0 30px;
+  /* padding: 0 30px; */
   max-width: 500px;
 
   @media screen and (max-width: 480px) {
@@ -48,7 +50,7 @@ export const Column1 = styled.div`
 `;
 export const Column2 = styled.div`
   grid-area: col2;
-  padding: 0 30px;
+  /* padding: 0 30px; */
   max-width: 500px;
 
   @media screen and (max-width: 480px) {

@@ -9,55 +9,57 @@ export const Info2Container = styled.div`
 `;
 export const Info2Wrapper = styled.div`
   columns: 2 500px;
-  column-gap: 0.5rem;
+  column-gap: 2rem;
   height: 100%;
-  padding: 24px;
+  padding: 96px 24px;
+  max-width: 1100px;
 
-  @media screen and (max-width: 1120px) {
-    columns: 2 400px;
-  }
-  @media screen and (max-width: 885px) {
+  @media screen and (max-width: 1085px) {
     columns: 2 300px;
   }
-  @media screen and (max-width: 660px) {
+
+  @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 48px 24px;
   }
 `;
 export const Column1 = styled.div`
-  padding: 0 30px;
-  max-width: 500px;
-  height: 150px;
-  width: 100%;
+  /* padding: 0 30px; */
+  /* max-width: 500px; */
+  /* height: 150px; */
+  /* width: 100%; */
 
-  @media screen and (max-width: 480px) {
-    padding: 0;
+  @media screen and (max-width: 768px) {
+    width: 500px;
   }
 `;
 export const Column2 = styled.div`
-  padding: 0 30px;
-  max-width: 500px;
-  height: 450px;
-  width: 100%;
+  /* padding: 0 30px; */
+  /* max-width: 500px; */
+  /* height: 450px; */
+  /* width: 100%; */
+  margin-bottom: 2rem;
 
-  @media screen and (max-width: 480px) {
-    padding: 0;
+  @media screen and (max-width: 768px) {
+    width: 500px;
   }
 `;
 export const Column3 = styled.div`
-  padding: 0 30px;
-  max-width: 500px;
-  height: 400px;
-  width: 100%;
+  /* padding: 0 30px; */
+  /* max-width: 500px; */
+  /* height: 400px; */
+  /* width: 100%; */
+  margin-bottom: 2rem;
 
-  @media screen and (max-width: 480px) {
-    padding: 0;
+  @media screen and (max-width: 768px) {
+    width: 500px;
   }
 `;
 export const Info2H1 = styled.h1`
   color: #fff;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
   font-size: 35px;
   line-height: 1.1;
   font-weight: 600;
@@ -80,7 +82,7 @@ export const TextWrapper = styled.div`
   padding: 20px;
   background: ${secondary};
   border-radius: 4px 4px 0 0;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 `;
 export const InfoNumber = styled.h3`
   color: #fff;
